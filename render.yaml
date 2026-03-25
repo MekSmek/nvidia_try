@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: nvidia-proxy
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NVIDIA_API_KEY
+        value: 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
